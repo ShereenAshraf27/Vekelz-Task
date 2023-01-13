@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins';
+}
+
+body{
+    width: 100%;
+    background:rgb(233, 237, 241);    
+    position: relative;
+    display: flex;
+}
+/* ------------------------------------------------------------------------- Style of menu ---------------------------------------------*/
+#menu .menu2{
+    margin: 230px 0;
+}
+
+#menu{
+    
+    width: 250px;
+    height: 100%;
+    background: white;
+    margin: 20px 0 10px 10px;
+    
+}
+
+#menu .SelectedItem{
+    display: flex;
+    align-items: center;
+    background:rgb(233, 237, 241);    
+    font-size: 10;
+    font-weight: 5px;
+    color: purple;
+}
+
+#menu .SelectedItem i{
+    width: 15px;
+    margin-right: 5px;
+    color: purple;
+}
+
+#menu .logo{
+    display: flex;
+    align-items: center;
+    padding: 20px 0 0 30px;
+}
+#menu .logo img{
+    width: 40px;
+    margin-right: 15px;
+}
+
+#menu .items{
+    margin-top: 40px;
+}
+
+#menu .items li{
+    list-style: none;
+    padding: 2px 0;
+    margin: 5px 30px;
+    border-radius: 3px;
+
+}
+
+#menu .items .Select{
+    background:rgb(233, 237, 241);    
+}
+
+#menu .items li:hover{
+    background:rgb(233, 237, 241);    
+    cursor: pointer;
+}
+
+#menu .items li i{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 10px 0 25px;
+    color: rgb(79, 78, 78);
+    
+}
+#menu .items li a{
+    text-decoration: none;
+    color: rgb(79, 78, 78);
+    font-weight: 500px;
+}
+
+
+#Interface{
+    width: calc(100% - 250px);
+    
+}
+/* ------------------------------------------------------------------------- Style of navigation_bar ---------------------------------------------*/
+
+#Interface .navigation_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    margin: 40px 15px 30px 0;
+    background: white;
+}
+#Interface .navigation_bar .search{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 14px;
+    background: rgb(223, 231, 239); 
+    border-radius: 3px;
+}
+#Interface .navigation_bar .search i{
+    margin-right: 14px;
+}
+#Interface .navigation_bar .search input:focus{
+    color: orange;
+}
+#Interface .navigation_bar .search input{
+    border: none;    
+    outline: none;
+    font-size: 14px;
+    background: rgb(223, 231, 239);
+    color: black;
+}
+
+#Interface .navigation_bar .n2_profile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#Interface .navigation_bar .n2_profile img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+#Interface .navigation_bar .n2_profile i{
+    margin-right: 20px;
+    font-size: 19px;
+    font-weight: 500px;
+}
+
+/* ------------------------------------------------------------------------- Style of First Boxes row ---------------------------------------------*/
+
+
+#Interface .BoxValues1{
+    display: flex;
+    justify-content:space-evenly;
+    padding-left: 20px;
+    flex-wrap: wrap;
+}
+
+#Interface .BoxValues1  .Box{
+    width: 200px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: 3px solid  rgb(233, 237, 241);
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 30px 30px 30px rgba(0, 0, 0 , 0.02);
+    transition: 0.02s ease;
+    position: relative;
+
+}
+#Interface .BoxValues1 .Box:hover{
+    box-shadow: 30px 30px 30px rgba(0, 0, 0 , 0.08);
+
+}
+
+#Interface .BoxValues1 .Box .container{
+    width: 200px;
+    height: 200px;
+   
+}
+#Interface .BoxValues1 .Box .container i{
+    position:absolute;
+    font-size: 20px;
+    left: 80px;
+    top: 20px;
+}
+#Interface .BoxValues1 .Box .container h4{
+    position:absolute;
+    left: 55px;
+    top: 50px;
+}
+#Interface .BoxValues1 .Box .container h5{
+    position:absolute;
+    left: 75px;
+    bottom: 30px;
+}
+
+#Interface .BoxValues1 .Box .container .En {
+    color: white;
+}
+#Interface .BoxValues1 .Box #Eng {
+    border: 3px solid white;
+    border-radius: 20px;
+    background: #9966CC;
+}
+
+
+#Interface .BoxValues1 .Box .container svg{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: 40px;
+    top: 40px;
+    transform: rotate(125deg);
+
+}
+
+#Interface .BoxValues1 .Box .container svg circle{
+    width: 200px;
+    height: 200px;
+    fill: none;
+    stroke-width: 10;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 200;
+    stroke-dashoffset: 400;
+    
+}
+#Interface .BoxValues1 .Box .container svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke:rgb(210, 211, 213);    
+    
+}
+#Interface .BoxValues1 .Box #Eng svg circle:nth-child(2){
+    stroke-dashoffset:120;
+    stroke: white;
+}
+#Interface .BoxValues1 .Box #Rng svg circle:nth-child(2){
+    stroke-dashoffset:95;
+    stroke: #d87093;
+}#Interface .BoxValues1 .Box #Bre svg circle:nth-child(2){
+    stroke-dashoffset:160;
+    stroke: #9966CC;
+}#Interface .BoxValues1 .Box #Tir svg circle:nth-child(2){
+    stroke-dashoffset:145;
+    stroke: orange;
+}
+
+
+/* ------------------------------------------------------------------------- Style of Second Boxes row ---------------------------------------------*/
+
+#Interface .BoxValues2{
+    display: flex;
+    justify-content:space-evenly;
+    padding-left: 20px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+#Interface .BoxValues2  .Box2{
+    width: 490px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: 3px solid  rgb(233, 237, 241);
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 30px 30px 30px rgba(0, 0, 0 , 0.02);
+    transition: 0.02s ease;
+    position: relative;
+
+}
+#Interface .BoxValues2 .Box2:hover{
+    box-shadow: 30px 30px 30px rgba(0, 0, 0 , 0.08);
+}
+#Interface .BoxValues2 .Box2 .miles .mile{
+    color: #606063;
+    font-size: 12px;
+}
+
+#Interface .BoxValues2 .Box2 .miles{
+    position: absolute;
+    left: 50px;
+    bottom: 10px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+
+}
+#Interface .BoxValues2 .Box2 .mile::after{
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 27px;
+    background:rgb(233, 237, 241);    
+    width: 30px;
+
+}
+
+#Interface .BoxValues2 .Box2 .mile:nth-child(1):after{
+   height: calc((363px/100)*35);
+}
+#Interface .BoxValues2 .Box2 .mile:nth-child(2):after{
+    height: calc((363px/100)*30);
+ }
+ #Interface .BoxValues2 .Box2 .mile:nth-child(3):after{
+    background: rgb(9, 120, 237);
+    height: calc((363px/100)*39);
+ }
+ #Interface .BoxValues2 .Box2 .mile:nth-child(4):after{
+    height: calc((363px/100)*25);
+ }
+ #Interface .BoxValues2 .Box2 .mile:nth-child(5):after{
+    height: calc((363px/100)*30);
+ }
+ #Interface .BoxValues2 .Box2 .mile:nth-child(6):after{
+    height: calc((363px/100)*25);
+ }
+ #Interface .BoxValues2 .Box2 .mile:nth-child(7):after{
+    height: calc((363px/100)*30);
+ }
+
+
+ #Interface .BoxValues2 .Box2 .lines .line{
+    color: #606063;
+    font-size: 12px;
+}
+
+#Interface .BoxValues2 .Box2 .lines{
+    position: absolute;
+    left: 90px;
+    bottom: 10px;
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+
+}
+#Interface .BoxValues2 .Box2 .line::after{
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 27px;
+    background: rgb(233, 237, 241);    
+    width: 2px;
+
+}
+#Interface .BoxValues2 .Box2 .line:nth-child(1):after{
+   height: calc((363px/100)*40);
+}
+#Interface .BoxValues2 .Box2 .line:nth-child(2):after{
+    height: calc((363px/100)*40);
+ }
+ #Interface .BoxValues2 .Box2 .line:nth-child(3):after{
+    height: calc((363px/100)*40);
+ }
+ #Interface .BoxValues2 .Box2 .line:nth-child(4):after{
+    height: calc((363px/100)*40);
+ }
+ #Interface .BoxValues2 .Box2 .line:nth-child(5):after{
+    height: calc((363px/100)*40);
+ }
+ #Interface .BoxValues2 .Box2 .line:nth-child(6):after{
+    height: calc((363px/100)*40);
+ }
+
+ #Interface .BoxValues2 .Box2 h4{
+    position: absolute;
+    top: 1px;
+    left: 20px;
+ }
+#Interface .BoxValues2 .Box2 span{
+   font-weight:normal;
+ }
+
+ #Interface .BoxValues2 .Box2 #Bar h6{
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    font-weight: 600;
+    color: #606063;
+ }
+
+ #Interface .BoxValues2 .Box2 #Bar p{
+    position: absolute;
+    font-size:11px;
+    top: 25px;
+    left: 20px;
+    font-weight: 600;
+    color: #606063;
+ }
+
+ #Interface .BoxValues2 .Box2 #Bar p .day{
+    color:white;
+    border: 1px solid rgb(9, 120, 237);
+    border-radius: 10px;
+    background: rgb(9, 120, 237);
+ }
+
+
+ #Interface .BoxValues2 .Box2 .time .hour{
+    color: #606063;
+    font-size: 12px;
+}
+ #Interface .BoxValues2 .Box2 .time{
+    position: absolute;
+    left: 50px;
+    bottom: 10px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+
+}
+#Interface .BoxValues2 .Box2 #Graph p{
+    position: absolute;
+    font-size:11px;
+    top: 35px;
+    right: 20px;
+    font-weight: 600;
+    color: #515153;
+    background:rgb(233, 237, 241) ;
+ }
+
+ #Interface .BoxValues2 .Box2 #Graph p .day{
+    color:white;
+    border: 1px solid rgb(237, 79, 12);
+    border-radius: 10px;
+    background: rgb(237, 79, 12);
+ }
+ #Interface .BoxValues2 .Box2 #Graph h6{
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    font-weight: 600;
+    color: #6c6c6e;
+ }
+
+
+ .area-chart td {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(236, 198, 237, 0.65);
+  }
+ .area-chart {
+    position: absolute;
+    width: 100%;
+    max-width: 800px;
+    height: 200px;
+    top: 370px;
+    left: 990px;
+  }
+  
+ .area-chart tbody {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+ .area-chart tr {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+ 
+ .area-chart td {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color:rgba(236, 198, 237, 0.65);
+  }
+ .area-chart td {
+    -webkit-clip-path: polygon(
+      0% calc(100% * (1 - var(--start))),
+      100% calc(100% * (1 - var(--end))),
+      100% 100%,
+      0% 100%
+    );
+    clip-path: polygon(
+      0% calc(100% * (1 - var(--start))),
+      100% calc(100% * (1 - var(--end))),
+      100% 100%,
+      0% 100%
+    );
+  }
+
+
+
+
+
+/* ------------------------------------------------------------------------- Style of Third Boxes row ---------------------------------------------*/
+
+ #Interface .pro_container{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 20px;
+    flex-wrap: wrap;
+}
+ #Interface .pro_container .pro{
+    width: 300px;
+    height: 170px;
+    background: white;
+    margin: 20px 0 10px 10px;
+    border: 1px solid #cce7d0;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0 , 0.02);
+    transition: 0.02s ease;
+    position: relative;
+}
+#Interface .pro_container .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0 , 0.08);
+}
+#Interface .pro_container  #pro1{
+    background:#dad787;
+}
+#Interface .pro_container  #pro2{
+    background:#ddf3f6;
+}
+#Interface .pro_container  #pro3{
+    background:#ebc1e3;
+}
+#Interface .pro_container .pro #refresh{
+    position: absolute;
+    left: 20px;
+    top: 10px
+}
+#Interface .pro_container .pro h6{
+    position: absolute;
+    left: 40px;
+    top: 10px
+}
+#Interface .pro_container .pro img{
+    mix-blend-mode: multiply;
+    width: 150px;    
+    border-radius: 20px;
+    position: absolute;
+    bottom: 45px;
+    right: 70px;
+}
+#Interface .pro_container .pro h5{
+    position: absolute;
+    left: 20px;
+    bottom: 35px
+}
+#Interface .pro_container .pro .footer{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: small;
+    font-weight: 600;
+    color: #606063;
+}
+#Interface .pro_container .pro .footer .span2 {
+    position: absolute;
+    left: 220px;
+}
+#Interface .pro_container .pro .footer  #flash {
+    position: absolute;
+    left: 100px;
+}
+#Interface .pro_container .pro .footer  #set {
+    position: absolute;
+    left: 70px;
+}
+#Interface .pro_container .pro .footer  .span1 {
+    position: absolute;
+    left: 25px;
+}
+
+
+
